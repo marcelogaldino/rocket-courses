@@ -1,0 +1,67 @@
+{% extends 'layout.njk' %}
+
+    {% block head %}
+        <title>Conteúdos - Rocket</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% endblock %}
+    
+    {% block content %}
+
+        <section class="courses">
+
+            <div class="course" id="starter">
+                <div class="course-image">
+                    <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="starter">
+                </div>
+                <div class="course-content">
+                    <p>Cursos 100% online e gratuitos para você entrar com o pé direito nas tecnologias mais desejadas do mercado.</p>
+                </div>
+                <div class="course-info">
+                    <p>8 horas</p>
+                    <p class="course-price">FREE</p>
+                </div>
+            </div>
+
+            <div class="course" id="launchbase">
+                <div class="course-image">
+                    <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="launchbase">
+                </div>
+                <div class="course-content">
+                    <p>Domine o desenvolvimento web do zero e acelere na direção dos seus objetivos.</p>
+                </div>
+                <div class="course-info">
+                    <p>16 horas</p>
+                    <p class="course-price">PAGO</p>
+                </div>
+            </div>
+
+            <div class="course" id="gostack">
+                <div class="course-image">
+                    <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="gostack">
+                </div>
+                <div class="course-content">
+                    <p>Acelere sua evolução. Domine o back-end, o front-end e o mobile através do método que vai te guiar direto ao ponto na direção dos seus objetivos.</p>
+                </div>
+                <div class="course-info">
+                    <p>32 horas</p>
+                    <p class="course-price">PAGO</p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="close-modal" >
+                    <i class="material-icons">close</i>
+                </a>
+
+                <div class="modal-content">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./script.js"></script>
+
+  {% endblock %}

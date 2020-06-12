@@ -186,3 +186,12 @@ iframe {
     position: absolute;
     top: 5%;
 }
+
+/* NOT FOUND */
+
+.wrapper h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 52px;
+    margin-top: 150px;
+}
