@@ -7,8 +7,8 @@
     {% block content %}
 
         <div class="wrapper">
-            <img src="https://rocketseat.com.br/static/images/logo-rocketseat.svg" alt="logo rocketseat">
-            <h1>Rocket Courses</h1>
+            <img src="{{ data.logo_url }}" alt="{{ data.name }}">
+            <h1>{{ data.name }}</h1>
         </div>
 
     {% endblock %}

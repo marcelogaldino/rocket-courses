@@ -9,44 +9,20 @@
 
         <section class="courses">
 
-            <div class="course" id="starter">
-                <div class="course-image">
-                    <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="starter">
+            {% for course in data.courses %}
+                <div class="course" id="{{ course.name }}">
+                    <div class="course-image">
+                        <img src="{{ course.image_url }}" alt="{{ course.name }}">
+                    </div>
+                    <div class="course-content">
+                        <p>{{ course.description }}</p>
+                    </div>
+                    <div class="course-info">
+                        <p>{{ course.hours }}</p>
+                        <p class="course-price">{{ course.price }}</p>
+                    </div>
                 </div>
-                <div class="course-content">
-                    <p>Cursos 100% online e gratuitos para você entrar com o pé direito nas tecnologias mais desejadas do mercado.</p>
-                </div>
-                <div class="course-info">
-                    <p>8 horas</p>
-                    <p class="course-price">FREE</p>
-                </div>
-            </div>
-
-            <div class="course" id="launchbase">
-                <div class="course-image">
-                    <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="launchbase">
-                </div>
-                <div class="course-content">
-                    <p>Domine o desenvolvimento web do zero e acelere na direção dos seus objetivos.</p>
-                </div>
-                <div class="course-info">
-                    <p>16 horas</p>
-                    <p class="course-price">PAGO</p>
-                </div>
-            </div>
-
-            <div class="course" id="gostack">
-                <div class="course-image">
-                    <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="gostack">
-                </div>
-                <div class="course-content">
-                    <p>Acelere sua evolução. Domine o back-end, o front-end e o mobile através do método que vai te guiar direto ao ponto na direção dos seus objetivos.</p>
-                </div>
-                <div class="course-info">
-                    <p>32 horas</p>
-                    <p class="course-price">PAGO</p>
-                </div>
-            </div>
+            {% endfor %}
 
         </section>
 
