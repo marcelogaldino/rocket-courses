@@ -110,6 +110,7 @@ header {
     background: var(--black-opacity);
     padding: 8px;
     cursor: pointer;
+    display: grid;
 }
 
 .course-image {
@@ -129,6 +130,7 @@ header {
 .course-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .course-info .course-price {
@@ -194,4 +196,11 @@ iframe {
     font-weight: bold;
     font-size: 52px;
     margin-top: 150px;
+}
+
+/* COURSES */
+
+.center {
+    margin: 0 auto;
+    max-width: 450px;
 }

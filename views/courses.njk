@@ -1,0 +1,27 @@
+{% extends 'layout.njk' %}
+
+    {% block head %}
+        <title>{{ course.name }} - Rocket</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% endblock %}
+    
+    {% block content %} 
+
+        <section class="center">
+
+            <div class="course link" id="{{ course.name }}">
+                <div class="course-image">
+                    <img src="{{ course.image_url }}" alt="{{ course.name }}">
+                </div>
+                <div class="course-content">
+                    <p>{{ course.description }}</p>
+                </div>
+                <div class="course-info">
+                    <p>{{ course.hours }}</p>
+                    <p class="course-price">{{ course.price }}</p>
+                </div>
+            </div>
+
+        </section>
+        
+  {% endblock %}
