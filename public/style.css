@@ -204,3 +204,18 @@ iframe {
     margin: 0 auto;
     max-width: 450px;
 }
+
+/* FOOTER */
+
+footer {
+    margin-top: 32px;
+    padding: 32px;
+    background: var(--black-opacity);
+    filter: brightness(90%);
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
